@@ -78,7 +78,7 @@ test('testing second powerMode, should silently fail', () => {
   john.doAttack();
   john.doAttack();
   john.doAttack();
-  john.doAttack();
+  john.powerMode();
 
   const { attack, defence, health } = john;
   const expected = { attack: 100, defence: 200, health: 50 };
