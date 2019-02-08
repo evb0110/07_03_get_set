@@ -8,12 +8,12 @@ class Character {
     this._health = health;
     this.powerCount = 3;
     this.powerUsed = false;
-    this.powerOn = false;
+    this._powerOn = false;
   }
 
-  powerMode() {
+  set powerOn(boolValue) {
     if (this.powerUsed) return;
-    this.powerOn = true;
+    this._powerOn = boolValue;
   }
 
   doAttack() {
